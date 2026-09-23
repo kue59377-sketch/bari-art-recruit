@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#050505">
 <title>출입금지 스튜디오 — RECRUIT</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="2D 사이드스크롤 리듬 게임 「바리 음악사무소」를 만드는 출입금지 스튜디오에서 아트 · 시나리오(세계관) 파트를 모집합니다. 수익 배분 · 디스코드 원격 협업.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="출입금지 스튜디오 — 아트 · 시나리오 모집">
+<meta property="og:description" content="2D 사이드스크롤 리듬 게임 「바리 음악사무소」를 함께 만들 아트 · 시나리오 파트를 찾습니다.">
+<meta property="og:image" content="https://kue59377-sketch.github.io/bari-art-recruit/assets/logo-square.png">
+<meta property="og:url" content="https://kue59377-sketch.github.io/bari-art-recruit/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo-square.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&amp;family=IBM+Plex+Mono:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Mono:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
 html{background:#050505;scroll-behavior:smooth}
 body{margin:0;background:#050505;color:#f1ead7;font-family:"Noto Sans KR",system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
@@ -70,9 +75,24 @@ a:hover{color:#f1c400}
   [data-job-cols]{grid-template-columns:1fr!important}
   [data-hw]{font-size:70%}
 }
+.hv1:hover{color:#f1ead7!important}
+.hv2:hover{background:#f1c400!important;color:#050505!important}
+.hv3:hover{border-color:#f1c400!important;color:#f1c400!important}
+.hv4:hover{background:#111!important}
+.hv5:hover{background:#f1c400!important;color:#050505!important;border-color:#f1c400!important}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  [data-rv],[data-stagger]>*{opacity:1!important;transform:none!important}
+  [data-rv-title]{opacity:1!important;color:#f1ead7!important;clip-path:none!important;transform:none!important}
+}
 </style>
-</helmet>
-
+<noscript><style>
+  [data-rv],[data-stagger]>*{opacity:1!important;transform:none!important}
+  [data-rv-title]{opacity:1!important;color:#f1ead7!important;clip-path:none!important;transform:none!important}
+  [data-rv-title]::after{display:none}
+</style></noscript>
+</head>
+<body>
 <div style="position:relative;min-height:100vh;background:#050505;overflow:hidden">
   <div data-progress="" style="position:fixed;left:0;top:0;height:4px;width:100%;background:#f1c400;z-index:100;transform:scaleX(0);transform-origin:left;box-shadow:0 0 18px rgba(241,196,0,.5)"></div>
   <div data-scan="" style="position:fixed;inset:0;pointer-events:none;z-index:49;background:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px);background-size:100% 4px;opacity:.28"></div>
@@ -84,9 +104,9 @@ a:hover{color:#f1c400}
         <span style="display:flex;flex-direction:column;line-height:1.2"><span>출입금지 스튜디오</span><span style="color:#f1c400;font:500 9px/1.2 'IBM Plex Mono',monospace;letter-spacing:.13em;margin-top:3px">RECRUIT / OPEN POSITIONS</span></span>
       </a>
       <nav data-nav="" style="display:flex;gap:4px;font:500 12px/1 'IBM Plex Mono',monospace;letter-spacing:.04em">
-        <a href="#art" style="padding:10px 11px;color:#aaa28f" style-hover="color:#f1ead7">ART</a>
-        <a href="#scenario" style="padding:10px 11px;color:#aaa28f" style-hover="color:#f1ead7">SCENARIO</a>
-        <a href="#apply" style="padding:10px 11px;color:#f1c400;border:1px solid #5a4b00" style-hover="background:#f1c400;color:#050505">APPLY →</a>
+        <a href="#art" style="padding:10px 11px;color:#aaa28f" class="hv1">ART</a>
+        <a href="#scenario" style="padding:10px 11px;color:#aaa28f" class="hv1">SCENARIO</a>
+        <a href="#apply" style="padding:10px 11px;color:#f1c400;border:1px solid #5a4b00" class="hv2">APPLY →</a>
       </nav>
     </div>
   </header>
@@ -124,15 +144,15 @@ a:hover{color:#f1c400}
       <h1 data-hero="1" style="margin:0;font:400 clamp(58px,8.6vw,122px)/.9 'Black Han Sans',sans-serif;letter-spacing:-.048em;text-shadow:0 10px 34px rgba(0,0,0,.75)"><span style="color:#f1c400;display:inline-block;animation:heroGlitch 6.5s linear 2s infinite">함께 만들</span><br>사람을 찾습니다.</h1>
       <div data-hero="3" style="margin-top:26px;padding:17px 0 0 18px;border-left:2px solid #f1c400;max-width:600px;font-size:17px;color:#d2cbb9">2D 사이드스크롤 리듬 게임 「바리 음악사무소」를 만드는 다섯 명의 팀입니다.<br>아트, 시나리오(세계관) 파트를 모집합니다.<small style="display:block;margin-top:9px;color:#80796c;font:500 11px/1.4 'IBM Plex Mono',monospace;letter-spacing:.07em">REVENUE SHARE · REMOTE VIA DISCORD · PC</small></div>
       <div data-hero="4" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:36px">
-        <a href="#art" style="display:inline-flex;align-items:center;gap:10px;border:1px solid #f1c400;color:#f1c400;padding:12px 16px;font:700 12px/1 'IBM Plex Mono',monospace;letter-spacing:.06em" style-hover="background:#f1c400;color:#050505">공고 보기 <span>↓</span></a>
-        <a href="#apply" style="display:inline-flex;align-items:center;gap:10px;border:1px solid #2b2b2b;color:#aaa28f;padding:12px 16px;font:600 12px/1 'IBM Plex Mono',monospace;letter-spacing:.06em" style-hover="border-color:#f1c400;color:#f1c400">지원 방법</a>
+        <a href="#art" style="display:inline-flex;align-items:center;gap:10px;border:1px solid #f1c400;color:#f1c400;padding:12px 16px;font:700 12px/1 'IBM Plex Mono',monospace;letter-spacing:.06em" class="hv2">공고 보기 <span>↓</span></a>
+        <a href="#apply" style="display:inline-flex;align-items:center;gap:10px;border:1px solid #2b2b2b;color:#aaa28f;padding:12px 16px;font:600 12px/1 'IBM Plex Mono',monospace;letter-spacing:.06em" class="hv3">지원 방법</a>
       </div>
     </div>
     <div data-hero="3" data-hero-emblem="" style="position:relative;transform:rotate(1deg)"><img data-emblem="" src="assets/logo-square.png" alt="출입금지 스튜디오" style="display:block;width:clamp(140px,16vw,210px);aspect-ratio:1;object-fit:cover;border:1px solid #594a00;box-shadow:0 0 0 6px #050505,14px 14px 0 rgba(0,0,0,.35);opacity:.92"></div>
     </div>
   </section>
 
-  <div style="height:30px;background:#caa500;color:#050505;overflow:hidden;border-top:1px solid #050505;border-bottom:1px solid #050505;display:flex;align-items:center">{{ tickerEl }}</div>
+  <div style="height:30px;background:#caa500;color:#050505;overflow:hidden;border-top:1px solid #050505;border-bottom:1px solid #050505;display:flex;align-items:center"><div data-ticker style="white-space:nowrap;font:700 13px/1 'Noto Sans KR',sans-serif;letter-spacing:.1em;animation:ticker 34s linear infinite"><span style="padding:0 22px">출입금지</span><span style="padding:0 22px">DO NOT CROSS</span><span style="padding:0 22px">NOW RECRUITING</span><span style="padding:0 22px">아트</span><span style="padding:0 22px">시나리오 / 세계관</span><span style="padding:0 22px">출입금지</span><span style="padding:0 22px">DO NOT CROSS</span><span style="padding:0 22px">NOW RECRUITING</span><span style="padding:0 22px">아트</span><span style="padding:0 22px">시나리오 / 세계관</span><span style="padding:0 22px">출입금지</span><span style="padding:0 22px">DO NOT CROSS</span><span style="padding:0 22px">NOW RECRUITING</span><span style="padding:0 22px">아트</span><span style="padding:0 22px">시나리오 / 세계관</span><span style="padding:0 22px">출입금지</span><span style="padding:0 22px">DO NOT CROSS</span><span style="padding:0 22px">NOW RECRUITING</span><span style="padding:0 22px">아트</span><span style="padding:0 22px">시나리오 / 세계관</span></div></div>
 
   <section data-screen-label="conditions" style="padding:72px 0 0;background:#070707">
     <div data-stagger="" style="width:min(1180px,92vw);margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
@@ -151,40 +171,90 @@ a:hover{color:#f1c400}
       </div>
 
       <div data-stagger="" style="display:grid;gap:14px">
-        <sc-for list="{{ jobs }}" as="job" hint-placeholder-count="3">
-          <article id="{{ job.id }}" data-screen-label="{{ job.id }}" style="background:#0e0e0e;border:1px solid #292929;position:relative;overflow:hidden">
+        <article id="art" data-screen-label="art" style="background:#0e0e0e;border:1px solid #292929;position:relative;overflow:hidden">
             <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px 28px;align-items:center;padding:26px 28px">
-              <span style="font:400 clamp(56px,7vw,96px)/.78 'Black Han Sans',sans-serif;color:#1f1e18;-webkit-text-stroke:2px #2b2a22;letter-spacing:-.07em">{{ job.no }}</span>
+              <span style="font:400 clamp(56px,7vw,96px)/.78 'Black Han Sans',sans-serif;color:#1f1e18;-webkit-text-stroke:2px #2b2a22;letter-spacing:-.07em">01</span>
               <div style="min-width:0">
-                <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span style="display:inline-block;color:#9f8500;border:1px solid #4a3e00;padding:5px 7px;font:600 9px/1 'IBM Plex Mono',monospace;letter-spacing:.12em">OPEN / {{ job.no }}</span><span style="color:#f1c400;font:700 11px/1 'IBM Plex Mono',monospace;letter-spacing:.3em">{{ job.en }}</span></div>
-                <div style="font:400 clamp(30px,3.6vw,44px)/.95 'Black Han Sans',sans-serif;margin-top:14px;color:#f1ead7">{{ job.role }}</div>
-                <p style="color:#8f8879;font-size:14px;line-height:1.7;margin:10px 0 0;max-width:560px">{{ job.summary }}</p>
+                <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span style="display:inline-block;color:#9f8500;border:1px solid #4a3e00;padding:5px 7px;font:600 9px/1 'IBM Plex Mono',monospace;letter-spacing:.12em">OPEN / 01</span><span style="color:#f1c400;font:700 11px/1 'IBM Plex Mono',monospace;letter-spacing:.3em">ART</span></div>
+                <div style="font:400 clamp(30px,3.6vw,44px)/.95 'Black Han Sans',sans-serif;margin-top:14px;color:#f1ead7">아트</div>
+                <p style="color:#8f8879;font-size:14px;line-height:1.7;margin:10px 0 0;max-width:560px">UI와 배경 작업. 현재 기획 자료와 기준 이미지가 있습니다.</p>
               </div>
             </div>
             <div>
-              <div style="border-top:1px dashed #262626;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0;position:relative"><span data-lock=""><i></i><i></i><i></i><i></i></span>
+              <div data-job-cols style="border-top:1px dashed #262626;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0;position:relative"><span data-lock=""><i></i><i></i><i></i><i></i></span>
                 <div style="padding:26px 28px 28px 32px;position:relative;background:#0a0a0a;border-right:1px solid #262626"><span style="position:absolute;left:0;top:0;bottom:0;width:4px;background:#f1c400"></span>
                   <div data-ph="" style="display:flex;align-items:center;gap:12px;margin-bottom:18px"><span style="background:#f1c400;color:#050505;padding:6px 9px;font:700 10px/1 'IBM Plex Mono',monospace;letter-spacing:.2em">TASKS</span><span style="color:#f1ead7;font:700 15px/1 'Noto Sans KR',sans-serif">담당 업무</span></div>
                   <ul style="list-style:none;margin:0;padding:0;display:grid;gap:10px">
-                    <sc-for list="{{ job.tasks }}" as="t" hint-placeholder-count="3">
-                      <li style="display:flex;gap:12px;align-items:flex-start;color:#d2cbb9;font-size:14px;line-height:1.6"><span style="flex:none;width:9px;height:9px;margin-top:8px;background:#f1c400;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)"></span><span>{{ t }}</span></li>
-                    </sc-for>
+                    
+                      <li style="display:flex;gap:12px;align-items:flex-start;color:#d2cbb9;font-size:14px;line-height:1.6"><span style="flex:none;width:9px;height:9px;margin-top:8px;background:#f1c400;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)"></span><span>챕터별 배경(사이드스크롤 레이어) 제작</span></li>
+                    
+                      <li style="display:flex;gap:12px;align-items:flex-start;color:#d2cbb9;font-size:14px;line-height:1.6"><span style="flex:none;width:9px;height:9px;margin-top:8px;background:#f1c400;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)"></span><span>인게임 UI와 노트·판정 그래픽</span></li>
+                    
+                      <li style="display:flex;gap:12px;align-items:flex-start;color:#d2cbb9;font-size:14px;line-height:1.6"><span style="flex:none;width:9px;height:9px;margin-top:8px;background:#f1c400;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)"></span><span>기존 기준 이미지에 맞춘 톤 통일</span></li>
+                    
                   </ul>
                 </div>
                 <div style="padding:26px 28px 28px 32px;background:#111">
                   <div data-ph="" style="display:flex;align-items:center;gap:12px;margin-bottom:18px"><span style="border:1px solid #6d5a00;color:#c3a300;padding:5px 9px;font:700 10px/1 'IBM Plex Mono',monospace;letter-spacing:.2em">PREFERRED</span><span style="color:#b3ac9a;font:700 15px/1 'Noto Sans KR',sans-serif">우대 사항</span></div>
                   <ul style="list-style:none;margin:0;padding:0;display:grid;gap:10px">
-                    <sc-for list="{{ job.prefer }}" as="p" hint-placeholder-count="3">
-                      <li style="display:flex;gap:12px;align-items:flex-start;color:#b3ac9a;font-size:14px;line-height:1.6"><span style="flex:none;color:#665500;font:600 12px/1.7 'IBM Plex Mono',monospace">+</span><span>{{ p }}</span></li>
-                    </sc-for>
+                    
+                      <li style="display:flex;gap:12px;align-items:flex-start;color:#b3ac9a;font-size:14px;line-height:1.6"><span style="flex:none;color:#665500;font:600 12px/1.7 'IBM Plex Mono',monospace">+</span><span>2D 배경/UI 작업 경험</span></li>
+                    
+                      <li style="display:flex;gap:12px;align-items:flex-start;color:#b3ac9a;font-size:14px;line-height:1.6"><span style="flex:none;color:#665500;font:600 12px/1.7 'IBM Plex Mono',monospace">+</span><span>Photoshop / Figma 사용</span></li>
+                    
+                      <li style="display:flex;gap:12px;align-items:flex-start;color:#b3ac9a;font-size:14px;line-height:1.6"><span style="flex:none;color:#665500;font:600 12px/1.7 'IBM Plex Mono',monospace">+</span><span>리듬 게임 UI에 관심이 있는 분</span></li>
+                    
+                      <li style="display:flex;gap:12px;align-items:flex-start;color:#b3ac9a;font-size:14px;line-height:1.6"><span style="flex:none;color:#665500;font:600 12px/1.7 'IBM Plex Mono',monospace">+</span><span>주 단위로 꾸준히 작업 가능한 분</span></li>
+                    
                   </ul>
                 </div>
               </div>
             </div>
             <span style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#8f7600"></span>
           </article>
-        </sc-for>
-      </div>
+<article id="scenario" data-screen-label="scenario" style="background:#0e0e0e;border:1px solid #292929;position:relative;overflow:hidden">
+            <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px 28px;align-items:center;padding:26px 28px">
+              <span style="font:400 clamp(56px,7vw,96px)/.78 'Black Han Sans',sans-serif;color:#1f1e18;-webkit-text-stroke:2px #2b2a22;letter-spacing:-.07em">02</span>
+              <div style="min-width:0">
+                <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span style="display:inline-block;color:#9f8500;border:1px solid #4a3e00;padding:5px 7px;font:600 9px/1 'IBM Plex Mono',monospace;letter-spacing:.12em">OPEN / 02</span><span style="color:#f1c400;font:700 11px/1 'IBM Plex Mono',monospace;letter-spacing:.3em">SCENARIO / WORLDBUILDING</span></div>
+                <div style="font:400 clamp(30px,3.6vw,44px)/.95 'Black Han Sans',sans-serif;margin-top:14px;color:#f1ead7">시나리오</div>
+                <p style="color:#8f8879;font-size:14px;line-height:1.7;margin:10px 0 0;max-width:560px">「바리 음악사무소」뿐 아니라 그 세계관 자체를 함께 만듭니다. 바리와 헤피아가 사는 세계의 규칙과 다른 이야기들까지 함께 짭니다.</p>
+              </div>
+            </div>
+            <div>
+              <div data-job-cols style="border-top:1px dashed #262626;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0;position:relative"><span data-lock=""><i></i><i></i><i></i><i></i></span>
+                <div style="padding:26px 28px 28px 32px;position:relative;background:#0a0a0a;border-right:1px solid #262626"><span style="position:absolute;left:0;top:0;bottom:0;width:4px;background:#f1c400"></span>
+                  <div data-ph="" style="display:flex;align-items:center;gap:12px;margin-bottom:18px"><span style="background:#f1c400;color:#050505;padding:6px 9px;font:700 10px/1 'IBM Plex Mono',monospace;letter-spacing:.2em">TASKS</span><span style="color:#f1ead7;font:700 15px/1 'Noto Sans KR',sans-serif">담당 업무</span></div>
+                  <ul style="list-style:none;margin:0;padding:0;display:grid;gap:10px">
+                    
+                      <li style="display:flex;gap:12px;align-items:flex-start;color:#d2cbb9;font-size:14px;line-height:1.6"><span style="flex:none;width:9px;height:9px;margin-top:8px;background:#f1c400;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)"></span><span>「바리 음악사무소」챕터별 의뢰 에피소드 구성</span></li>
+                    
+                      <li style="display:flex;gap:12px;align-items:flex-start;color:#d2cbb9;font-size:14px;line-height:1.6"><span style="flex:none;width:9px;height:9px;margin-top:8px;background:#f1c400;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)"></span><span>세계관 설정 확장(지역, 인물, 규칙 등)</span></li>
+                    
+                      <li style="display:flex;gap:12px;align-items:flex-start;color:#d2cbb9;font-size:14px;line-height:1.6"><span style="flex:none;width:9px;height:9px;margin-top:8px;background:#f1c400;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)"></span><span>캐릭터 대사 및 연출 지시문 작성</span></li>
+                    
+                      <li style="display:flex;gap:12px;align-items:flex-start;color:#d2cbb9;font-size:14px;line-height:1.6"><span style="flex:none;width:9px;height:9px;margin-top:8px;background:#f1c400;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)"></span><span>기존 세계관·대사 초안 톤 맞추기</span></li>
+                    
+                  </ul>
+                </div>
+                <div style="padding:26px 28px 28px 32px;background:#111">
+                  <div data-ph="" style="display:flex;align-items:center;gap:12px;margin-bottom:18px"><span style="border:1px solid #6d5a00;color:#c3a300;padding:5px 9px;font:700 10px/1 'IBM Plex Mono',monospace;letter-spacing:.2em">PREFERRED</span><span style="color:#b3ac9a;font:700 15px/1 'Noto Sans KR',sans-serif">우대 사항</span></div>
+                  <ul style="list-style:none;margin:0;padding:0;display:grid;gap:10px">
+                    
+                      <li style="display:flex;gap:12px;align-items:flex-start;color:#b3ac9a;font-size:14px;line-height:1.6"><span style="flex:none;color:#665500;font:600 12px/1.7 'IBM Plex Mono',monospace">+</span><span>세계관·설정 구축에 관심이 많은 분</span></li>
+                    
+                      <li style="display:flex;gap:12px;align-items:flex-start;color:#b3ac9a;font-size:14px;line-height:1.6"><span style="flex:none;color:#665500;font:600 12px/1.7 'IBM Plex Mono',monospace">+</span><span>게임 또는 짧은 대사 중심 글 작업 경험</span></li>
+                    
+                      <li style="display:flex;gap:12px;align-items:flex-start;color:#b3ac9a;font-size:14px;line-height:1.6"><span style="flex:none;color:#665500;font:600 12px/1.7 'IBM Plex Mono',monospace">+</span><span>가벼운 유머와 잔잔한 톤을 다룰 수 있는 분</span></li>
+                    
+                      <li style="display:flex;gap:12px;align-items:flex-start;color:#b3ac9a;font-size:14px;line-height:1.6"><span style="flex:none;color:#665500;font:600 12px/1.7 'IBM Plex Mono',monospace">+</span><span>한글 맞춤법과 리듬감 있는 문장에 신경 쓰는 분</span></li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <span style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#8f7600"></span>
+          </article> </div>
     </div>
   </section>
 
@@ -205,7 +275,7 @@ a:hover{color:#f1c400}
             <span style="color:#665500;font:700 10px/1 'IBM Plex Mono',monospace;letter-spacing:.3em">APPLY CHANNELS / 02</span>
           </div>
           <div style="display:grid;grid-template-columns:1fr 1fr">
-            <a href="https://open.kakao.com/o/sBuYGVKi" target="_blank" rel="noopener" style="display:flex;padding:20px 0 20px 0;margin:18px 0 0;color:#f1ead7;position:relative;text-decoration:none" style-hover="background:#111">
+            <a href="https://open.kakao.com/o/sBuYGVKi" target="_blank" rel="noopener" style="display:flex;padding:20px 0 20px 0;margin:18px 0 0;color:#f1ead7;position:relative;text-decoration:none" class="hv4">
               <span style="width:13px;flex:none;background:repeating-linear-gradient(-45deg,#f1c400 0 6px,#050505 6px 12px)"></span>
               <span style="padding:0 22px;position:relative;flex:1">
                 <span style="color:#666056;font:500 11px/1.4 'IBM Plex Mono',monospace;letter-spacing:.08em">OPEN KAKAO</span>
@@ -214,7 +284,7 @@ a:hover{color:#f1c400}
                 <span style="position:absolute;right:14px;bottom:0;color:#f1c400;font:600 24px/1 'IBM Plex Mono',monospace">→</span>
               </span>
             </a>
-            <a href="https://discord.gg/qBetJ9EhGd" target="_blank" rel="noopener" style="display:flex;padding:20px 0 20px 0;margin:18px 0 0;color:#f1ead7;position:relative;text-decoration:none;border-left:1px dashed #262626" style-hover="background:#111">
+            <a href="https://discord.gg/qBetJ9EhGd" target="_blank" rel="noopener" style="display:flex;padding:20px 0 20px 0;margin:18px 0 0;color:#f1ead7;position:relative;text-decoration:none;border-left:1px dashed #262626" class="hv4">
               <span style="width:13px;flex:none;background:repeating-linear-gradient(-45deg,#f1c400 0 6px,#050505 6px 12px)"></span>
               <span style="padding:0 22px;position:relative;flex:1">
                 <span style="color:#666056;font:500 11px/1.4 'IBM Plex Mono',monospace;letter-spacing:.08em">DISCORD</span>
@@ -226,7 +296,7 @@ a:hover{color:#f1c400}
           </div>
           <div style="border-top:1px dashed #262626;padding:18px 22px;display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap">
             <div><b style="font-size:15px;color:#9e8400;font-family:'IBM Plex Mono',monospace;letter-spacing:.05em">보내주실 것</b><div style="margin-top:6px;color:#a89f8b;font-size:13px">① 지원 파트 &nbsp;② 작업물 링크 &nbsp;③ 2–3줄 소개 &nbsp;④ 주당 가능한 작업 시간</div></div>
-            <a href="https://kue59377-sketch.github.io/" target="_blank" rel="noopener" style="display:inline-block;border:1px solid #665500;padding:10px 14px;color:#c3a300;font:600 11px/1 'IBM Plex Mono',monospace;white-space:nowrap" style-hover="background:#f1c400;color:#050505;border-color:#f1c400">스튜디오 사이트 →</a>
+            <a href="https://kue59377-sketch.github.io/" target="_blank" rel="noopener" style="display:inline-block;border:1px solid #665500;padding:10px 14px;color:#c3a300;font:600 11px/1 'IBM Plex Mono',monospace;white-space:nowrap" class="hv5">스튜디오 사이트 →</a>
           </div>
         </div>
       </div>
@@ -237,71 +307,78 @@ a:hover{color:#f1c400}
     <div style="width:min(1180px,92vw);margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap"><span>© 2026 출입금지 스튜디오</span><span style="color:#9f8500">바리 음악사무소 — 개발 중 · 상시 모집</span></div>
   </footer>
 </div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props="{}">
-class Component extends DCLogic {
-  state = {};
-  componentDidMount() {
-    const h = location.hash.slice(1);
-    if (['art','scenario'].includes(h)) this.setState(s => ({ open: { ...s.open, [h]: true } }));
-    const d = document, q = s => [...d.querySelectorAll(s)];
-    this._io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); e.target.querySelectorAll('[data-rv-title]').forEach(t => t.classList.add('in')); this._io.unobserve(e.target); } }), { threshold: .12, rootMargin: '0px 0px -8%' });
-    const observe = () => q('[data-rv],[data-tape],[data-stagger]').forEach(el => { if (!el.classList.contains('in')) this._io.observe(el); });
-    observe();
-    this._mo = new MutationObserver(observe); this._mo.observe(d.body, { childList: true, subtree: true });
-    let ticking = false, lastY = scrollY, vel = 0;
-    const frame = () => {
-      const y = scrollY, ih = innerHeight, max = d.documentElement.scrollHeight - ih;
-      const raw = y - lastY; lastY = y; vel += (raw - vel) * .25; const v = Math.max(-42, Math.min(42, vel));
-      q('[data-rv],[data-tape],[data-stagger]').forEach(el => { if (!el.classList.contains('in') && el.getBoundingClientRect().top < ih * .92) { el.classList.add('in'); el.querySelectorAll('[data-rv-title]').forEach(t => t.classList.add('in')); } });
-      q('[data-shard]').forEach((s, i) => { s.style.marginLeft = (v * (3 + i * 2.2)).toFixed(1) + 'px'; });
-      const ret = d.querySelector('[data-reticle]'); if (ret) ret.style.transform = 'translate3d(' + (-v * 1.1).toFixed(1) + 'px,' + (y * .06).toFixed(1) + 'px,0) rotate(' + (v * .12).toFixed(2) + 'deg)';
-      q('[data-hw]').forEach((row, i) => { const dir = i % 2 ? 1 : -1; row.style.transform = 'rotate(-2.4deg) translate3d(' + (dir * y * (0.16 + i * 0.09)).toFixed(1) + 'px,0,0)'; });
-      const sc = d.querySelector('[data-scan]'); if (sc) sc.style.opacity = String(0.28 + Math.min(0.34, Math.abs(v) / 90));
-      const tk = d.querySelector('[data-ticker]'); if (tk) { tk.style.animationDuration = (34 / (1 + Math.min(2.6, Math.abs(v) / 14))).toFixed(2) + 's'; tk.style.animationDirection = raw < -1 ? 'reverse' : 'normal'; }
-      const pb = d.querySelector('[data-progress]'); if (pb) pb.style.transform = 'scaleX(' + (max ? y / max : 0) + ')';
-      const hb = d.querySelector('[data-hero-bg]'); if (hb) hb.style.transform = 'translate3d(0,' + (y * .12) + 'px,0)';
-      const em = d.querySelector('[data-emblem]'); if (em) em.style.transform = 'translate3d(0,' + (-y * .07) + 'px,0) rotate(' + (y * .012) + 'deg)';
-      const hc = d.querySelector('[data-hero-copy]'); if (hc) { hc.style.transform = 'translate3d(0,' + (y * .18) + 'px,0)'; hc.style.opacity = String(Math.max(0, 1 - y / (ih * .85))); }
-      q('[data-word]').forEach(el => { const r = el.parentElement.getBoundingClientRect(); const sp = parseFloat(el.dataset.word); el.style.transform = 'translate3d(0,' + ((ih * .5 - (r.top + r.height * .5)) * sp) + 'px,0)'; });
-      const rt = d.querySelector('[data-recruit-tape]'); if (rt) { const r = rt.parentElement.getBoundingClientRect(); rt.style.transform = 'rotate(-4deg) translateX(' + ((ih - r.top) * .08) + 'px)'; }
-      ticking = false;
-    };
-    this._onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(frame); } };
-    addEventListener('scroll', this._onScroll, { passive: true });
-    addEventListener('resize', this._onScroll, { passive: true });
-    frame();
-    const speeds = [46, 30, 62];
-    const loop = () => {
-      const t = performance.now() / 1000;
-      q('[data-hwt]').forEach((tr, i) => { const half = tr.scrollWidth / 2; if (!half) return; const dir = i === 1 ? 1 : -1; let o = (t * speeds[i]) % half; tr.style.transform = 'translate3d(' + (dir < 0 ? -o : o - half).toFixed(1) + 'px,0,0)'; });
-      this._raf = requestAnimationFrame(loop);
-    };
-    this._raf = requestAnimationFrame(loop);
-    this._ro = new ResizeObserver(() => this.componentDidUpdate()); q('[data-inner]').forEach(el => this._ro.observe(el));
-    this.componentDidUpdate();
+<script>
+(function(){
+  var d=document, q=function(s){return [].slice.call(d.querySelectorAll(s));};
+  var SEL='[data-rv],[data-tape],[data-stagger]';
+  function reveal(el){
+    el.classList.add('in');
+    [].forEach.call(el.querySelectorAll('[data-rv-title]'), function(t){ t.classList.add('in'); });
   }
-  componentWillUnmount() { cancelAnimationFrame(this._raf); this._ro?.disconnect(); this._io?.disconnect(); this._mo?.disconnect(); removeEventListener('scroll', this._onScroll); removeEventListener('resize', this._onScroll); }
-  renderVals() {
-    const data = [
-      { id: 'art', no: '01', en: 'ART', role: '아트', permit: '04A',
-        summary: 'UI와 배경 작업. 현재 기획 자료와 기준 이미지가 있습니다.',
-        tasks: ['챕터별 배경(사이드스크롤 레이어) 제작', '인게임 UI와 노트·판정 그래픽', '기존 기준 이미지에 맞춘 톤 통일'],
-        prefer: ['2D 배경/UI 작업 경험', 'Photoshop / Figma 사용', '리듬 게임 UI에 관심이 있는 분', '주 단위로 꾸준히 작업 가능한 분'] },
-      { id: 'scenario', no: '02', en: 'SCENARIO / WORLDBUILDING', role: '시나리오', permit: '04B',
-        summary: '「바리 음악사무소」뿐 아니라 그 세계관 자체를 함께 만듭니다. 바리와 헤피아가 사는 세계의 규칙과 다른 이야기들까지 함께 짭니다.',
-        tasks: ['「바리 음악사무소」챕터별 의뢰 에피소드 구성', '세계관 설정 확장(지역, 인물, 규칙 등)', '캐릭터 대사 및 연출 지시문 작성', '기존 세계관·대사 초안 톤 맞추기'],
-        prefer: ['세계관·설정 구축에 관심이 많은 분', '게임 또는 짧은 대사 중심 글 작업 경험', '가벼운 유머와 잔잔한 톤을 다룰 수 있는 분', '한글 맞춤법과 리듬감 있는 문장에 신경 쓰는 분'] },
-    ];
-    const jobs = data;
-    if (!this._ticker) {
-      const items = ['출입금지','DO NOT CROSS','NOW RECRUITING','아트','시나리오 / 세계관'];
-      const spans = []; for (let i = 0; i < 4; i++) items.forEach((t, k) => spans.push(React.createElement('span', { key: i + '-' + k, style: { padding: '0 22px' } }, t)));
-      this._ticker = React.createElement('div', { style: { whiteSpace: 'nowrap', font: "700 13px/1 'Noto Sans KR',sans-serif", letterSpacing: '.1em', animation: 'ticker 34s linear infinite', opacity: 1 }, 'data-ticker': '' }, spans);
-    }
-    return { jobs, tickerEl: this._ticker };
+  var io=null;
+  if('IntersectionObserver' in window){
+    io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ reveal(e.target); io.unobserve(e.target); } });
+    },{threshold:.12,rootMargin:'0px 0px -8%'});
+    q(SEL).forEach(function(el){ if(!el.classList.contains('in')) io.observe(el); });
+  } else {
+    q(SEL).forEach(reveal);
   }
-}
+
+  var ticking=false, lastY=scrollY, vel=0;
+  function frame(){
+    var y=scrollY, ih=innerHeight, max=d.documentElement.scrollHeight-ih;
+    var raw=y-lastY; lastY=y; vel+=(raw-vel)*.25;
+    var v=Math.max(-42,Math.min(42,vel));
+    q(SEL).forEach(function(el){
+      if(!el.classList.contains('in') && el.getBoundingClientRect().top < ih*.92) reveal(el);
+    });
+    q('[data-shard]').forEach(function(s,i){ s.style.marginLeft=(v*(3+i*2.2)).toFixed(1)+'px'; });
+    var ret=d.querySelector('[data-reticle]');
+    if(ret) ret.style.transform='translate3d('+(-v*1.1).toFixed(1)+'px,'+(y*.06).toFixed(1)+'px,0) rotate('+(v*.12).toFixed(2)+'deg)';
+    q('[data-hw]').forEach(function(row,i){
+      var dir=i%2?1:-1;
+      row.style.transform='rotate(-2.4deg) translate3d('+(dir*y*(0.16+i*0.09)).toFixed(1)+'px,0,0)';
+    });
+    var sc=d.querySelector('[data-scan]');
+    if(sc) sc.style.opacity=String(0.28+Math.min(0.34,Math.abs(v)/90));
+    var tk=d.querySelector('[data-ticker]');
+    if(tk){ tk.style.animationDuration=(34/(1+Math.min(2.6,Math.abs(v)/14))).toFixed(2)+'s';
+            tk.style.animationDirection=raw<-1?'reverse':'normal'; }
+    var pb=d.querySelector('[data-progress]');
+    if(pb) pb.style.transform='scaleX('+(max?y/max:0)+')';
+    var hb=d.querySelector('[data-hero-bg]');
+    if(hb) hb.style.transform='translate3d(0,'+(y*.12)+'px,0)';
+    var em=d.querySelector('[data-emblem]');
+    if(em) em.style.transform='translate3d(0,'+(-y*.07)+'px,0) rotate('+(y*.012)+'deg)';
+    var hc=d.querySelector('[data-hero-copy]');
+    if(hc){ hc.style.transform='translate3d(0,'+(y*.18)+'px,0)';
+            hc.style.opacity=String(Math.max(0,1-y/(ih*.85))); }
+    q('[data-word]').forEach(function(el){
+      var r=el.parentElement.getBoundingClientRect(), sp=parseFloat(el.dataset.word);
+      el.style.transform='translate3d(0,'+((ih*.5-(r.top+r.height*.5))*sp)+'px,0)';
+    });
+    var rt=d.querySelector('[data-recruit-tape]');
+    if(rt){ var rr=rt.parentElement.getBoundingClientRect();
+            rt.style.transform='rotate(-4deg) translateX('+((ih-rr.top)*.08)+'px)'; }
+    ticking=false;
+  }
+  function onScroll(){ if(!ticking){ ticking=true; requestAnimationFrame(frame); } }
+  addEventListener('scroll',onScroll,{passive:true});
+  addEventListener('resize',onScroll,{passive:true});
+  frame();
+
+  var speeds=[46,30,62];
+  (function loop(){
+    var t=performance.now()/1000;
+    q('[data-hwt]').forEach(function(tr,i){
+      var half=tr.scrollWidth/2; if(!half) return;
+      var dir=i===1?1:-1, o=(t*speeds[i])%half;
+      tr.style.transform='translate3d('+(dir<0?-o:o-half).toFixed(1)+'px,0,0)';
+    });
+    requestAnimationFrame(loop);
+  })();
+})();
 </script>
 </body>
 </html>
